@@ -5,8 +5,15 @@ html,body{
     font-size: 25px;
 }
 .wrapper{
+    
     height: 100%;
-    padding: 50px;
+    // width: 50%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.block {
+    display: flex;
+    width: 933px;
 }
 .slider {
     &__img1 {
@@ -35,48 +42,18 @@ html,body{
         justify-content: space-between;
     }
 }
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
 .slick-list {
-    overflow: hidden
+    overflow: hidden;
 }
-/* Лента слайдов */
 .slick-track{
     display: flex;
-    align-items: flex-start;
+    // align-items: flex-start;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
 .slider {
-    position: relative;
+    border: 1px solid #000;
+    // width: 40%;
+    margin-bottom: 100px;
+    // position: relative;
     padding: 0 50px;
     /*height: 1000px;*/
 }
@@ -133,15 +110,12 @@ html,body{
         margin: 0 10px;
     }
 }
-/* Активная точка */
-.slider .slick-dots li {}
-/* Элемент точки */
 .slider {
     .slick-dots button{
         font-size: 0;
         width: 10px;
         height: 10px;
-        background-color: #666;
+        background-color: #a0a0a0;
         border-radius: 50%;
     }
 }
@@ -149,13 +123,11 @@ html,body{
     .slick-dots {
         li.slick-active {
             button {
-                background-color: #333;
+                background-color: #e9b979;
             }
         }
     }
 }
-.slider__item {}
-
 .slider__block {
   color: #000;
   text-align: center;
@@ -163,6 +135,3 @@ html,body{
   max-width: 360px;
   border: 1px solid #000;
 }
-.slider__img {}
-.slider__title {}
-.slider__subtitle {}

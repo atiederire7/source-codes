@@ -10,7 +10,9 @@ html,body{
     margin: 0 auto;
 }
 /* Слайдер */
-.slick-slider{}
+.slick-slider{
+    // border: 1px solid #000;
+}
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
 /* Слайдер с точками */
@@ -50,13 +52,11 @@ html,body{
 /* Элемент точки */
 .slick-dots li button{}
 .slider {
+    border: 1px solid #000;
     position: relative;
     padding: 0 50px;
     /*height: 1000px;*/
 }
-/*.slider .slick-track {
-    display: block;
-}*/
 .slider {
     .slick-arrow {
         position: absolute;

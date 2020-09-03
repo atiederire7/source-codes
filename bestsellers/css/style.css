@@ -113,14 +113,12 @@ html, body {
 /* Активная точка */
 /* Элемент точки */
 .slider {
+  border: 1px solid #000;
   position: relative;
   padding: 0 50px;
   /*height: 1000px;*/
 }
 
-/*.slider .slick-track {
-    display: block;
-}*/
 .slider .slick-arrow {
   position: absolute;
   margin: -30px 0 0 0;
