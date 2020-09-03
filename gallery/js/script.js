@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $('.slider').slick({
-    	arrows:true,
+    	arrows:false,
     	dots:true,
     	adaptiveHeight:true,
-    	slidesToShow:4,
+    	slidesToShow:1,
     	slidesToScroll: 1,
     	speed: 500,
     	easing: 'ease',
@@ -13,7 +13,7 @@ $(document).ready(function(){
     	autoplaySpeed: 300,
     	pauseOnFocus:true,
     	pauseOnHover: true,
-    	pauseOnDotsHover:true,
+		pauseOnDotsHover:true,
     	draggable: true,
     	swipe: true,
     	// touchTreshold: 10,

@@ -87,6 +87,34 @@ html, body {
   padding: 50px;
 }
 
+.img1 {
+  width: 556px;
+  height: 436px;
+}
+
+.img2 {
+  width: 359px;
+  height: 211px;
+}
+
+.img3 {
+  width: 359px;
+  height: 211px;
+}
+
+.slider__item {
+  display: flex;
+}
+.item__left-block {
+  width: 556px;
+}
+
+.item__right-block {
+  display: flex;
+  flex-direction: column;
+  width: 556px;
+}
+
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */

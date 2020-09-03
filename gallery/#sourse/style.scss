@@ -10,7 +10,34 @@ html,body{
     height: 100%;
     padding: 50px;
 }
+.img1 {
+    width: 556px;
+    height: 436px;
+}
+.img2 {
+    width: 359px;
+    height: 211px;
+}
+.img3 {
+    width: 359px;
+    height: 211px;
+}
+.slider {
+    &__item {
+        display: flex;
+    }
+    &__img {
 
+    }
+}
+.item__left-block {
+    width: 556px;
+}
+.item__right-block {
+    display: flex;
+    flex-direction: column;
+    width: 556px;
+}
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
