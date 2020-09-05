@@ -87,7 +87,6 @@ html, body {
 }
 
 .block {
-  display: flex;
   width: 933px;
 }
 
@@ -120,6 +119,7 @@ html, body {
 
 .slick-track {
   display: flex;
+  align-items: flex-start;
 }
 
 .slider {
