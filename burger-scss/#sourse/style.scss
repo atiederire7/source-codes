@@ -112,13 +112,14 @@ html,body{
 		left: 0;
 		transition: all 0.3s ease 0s;
 	}
-	.header__burger.active 
-	.header__burger.active:before {
-		transform: rotate(45deg);
-		top: 9px;
-	}
-	.header
+	
+	// .header
 	.header {
+		&__burger.active 
+		&__burger.active:before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
 		&__burger.active {
 			span {
 				transform: scale(0);
