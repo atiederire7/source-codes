@@ -82,8 +82,10 @@ html, body {
 
 .wrapper {
   height: 100%;
+  width: 1440px;
   margin: 0 auto;
   border: 1px solid #000;
+  overflow: hidden;
 }
 
 .block__inner {
@@ -93,8 +95,6 @@ html, body {
 .slider {
   border: 1px solid #000;
   margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
   padding: 0 50px;
 }
 .slider__img1 {

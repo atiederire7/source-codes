@@ -6,21 +6,28 @@ html,body{
 }
 .wrapper{
     height: 100%;
+    width: 1440px;
     margin: 0 auto;
     border: 1px solid #000;
+    overflow: hidden;
 }
 .block {
+    // display: flex;
     &__inner {
         border: 1px solid #000;
+        // width: 600px;
     }
 }
 .slider {
+    // max-width: 1000px;
+    // width: 933px;
     border: 1px solid #000;
     margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     // justify-content: center;
     padding: 0 50px;
+    // width: 700px;
     // padding: 0 300px;
     &__img1 {
         width: 556px;
