@@ -7,7 +7,6 @@
 html,body{
 	height: 100%;
 }
-
 .wrapper {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -22,20 +21,17 @@ html,body{
 	top: 0;
 	left: 0;
 	z-index: 50;
-
-}
-.header:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	border: 1px solid #000;
-	z-index: 2;
-}
-.header {
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		border: 1px solid #000;
+		z-index: 2;
+	}
 	&__body {
 		position: relative;
 		/*z-index: 2;*/
@@ -54,9 +50,9 @@ html,body{
 		}
 	}
 	&__burger {
-		/*display: block;
+		display: block;
 		width: 30px;
-		height: 20px;*/
+		height: 20px;
 		display: none;
 	}
 	&__list {
@@ -79,28 +75,72 @@ html,body{
 	body.lock {
 		overflow: hidden;
 	}
-	.header__body {
-		height: 50px;
-	}
-	.header__logo {
-		flex: 0 0 40px;
-	}
-	.header__burger {
-		display: block;
-		position: relative;
-		width: 30px;
-		height: 20px;
-		position: relative;
-		z-index: 3;
-	}
-	.header__burger span {
-		position: absolute;
-		background-color: #000;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		top: 9px;
-		transition: all 0.3s ease 0s;
+	.header {
+		&__body {
+			height: 50px;
+		}
+		&__logo {
+			flex: 0 0 40px;
+		}
+		&__list {
+			display: block;
+			li {
+				margin: 0 0 20px 0;
+			}
+		}
+		&__link {
+			font-size: 24px;
+		}
+		&__menu {
+			&.active {
+				top: 0;
+			}
+			overflow: auto;
+			position: fixed;
+			top: -100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #18b5a4;
+			padding: 70px 10px 20px 10px;
+			transition: all 0.3s ease 0s;
+		}
+		&__burger {
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			position: relative;
+			z-index: 3;
+			&:after{
+				bottom: 0;
+			}
+			&:before {
+				top: 0;
+			}
+			span {
+				position: absolute;
+				background-color: #000;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				top: 9px;
+				transition: all 0.3s ease 0s;
+			}
+			&.active {
+				&:before {
+					transform: rotate(45deg);
+					top: 9px;
+				}
+				&:after {
+					transform: rotate(-45deg);
+					bottom: 9px;
+				}
+				span {
+					transform: scale(0);
+				}
+			}
+		}
 	}
 	.header__burger:before,
 	.header__burger:after{
@@ -112,57 +152,7 @@ html,body{
 		left: 0;
 		transition: all 0.3s ease 0s;
 	}
-	
-	// .header
-	.header {
-		&__burger.active 
-		&__burger.active:before {
-			transform: rotate(45deg);
-			top: 9px;
-		}
-		&__burger.active {
-			span {
-				transform: scale(0);
-			}
-			&:after {
-				transform: rotate(-45deg);
-				bottom: 9px;
-			}
-		}
-		&__burger {
-			&:after{
-				bottom: 0;
-			}
-			&:before {
-				top: 0;
-			}
-		}
-		&__menu {
-			overflow: auto;
-			position: fixed;
-			top: -100%;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #18b5a4;
-			padding: 70px 10px 20px 10px;
-			transition: all 0.3s ease 0s;
-		}
-		&__menu.active {
-			top: 0;
-		}
-		&__list {
-			display: block;
-			li {
-				margin: 0 0 20px 0;
-			}
-		}
-		&__link {
-			font-size: 24px;
-		}
-	}
 }
-
 .content {
 	&__text {
 		padding-top: 100px;
@@ -170,8 +160,6 @@ html,body{
 		line-height: 20px;
 	}
 }
-.container {}
-
 @media (max-width: 1120px) {
 	.content {
 		padding: 70px 0 0 0;
