@@ -11,12 +11,11 @@
 		header.header
 			.container
 				.header__body
-					a.header__logo(href="#")
-						img(src="logo.png" alt="")
+					
 					.header__burger
 						span
 					nav.header__menu
-						ul.header__list
+						ul.header__list.left
 							li
 								a.header__link(href="#") О нас      
 							li
@@ -25,6 +24,10 @@
 								a.header__link(href="#") Услуги
 							li
 								a.header__link(href="#") Вопрос-ответ
+					a.header__logo(href="#")
+						img(src="logo.png" alt="")
+					nav.header__menu
+						ul.header__list.right
 							li
 								a.header__link(href="#") Новости
 							li

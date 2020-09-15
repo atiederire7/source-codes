@@ -42,6 +42,7 @@ html,body{
 	}
 	&__logo {
 		flex: 0 0 60px;
+		margin: 0 auto;
 		position: relative;
 		z-index: 3;
 		img {
@@ -56,22 +57,38 @@ html,body{
 		display: none;
 	}
 	&__list {
+		border: 1px solid #000;
 		display: flex;
+		justify-content: space-between;
+		// width: 400px;
 		position: relative;
 		z-index: 2;
 		li {
 			list-style: none;
-			margin: 0 0 0 20px;
+			// margin: 0 0 0 34px;
 		}
 	}
 	&__link {
 		color: #000;
 		text-transform: uppercase;
-		font-size: 18px;
+		font-size: 15px;
+		font-weight: 500;
 		text-decoration: none;
 	}
 }
-@media (max-width:1120px){
+.right {
+	width: 533px;
+	li {
+		
+	}
+}
+.left {
+	width: 394px;
+	li {
+		
+	}
+}
+@media (max-width:1300px){
 	body.lock {
 		overflow: hidden;
 	}
