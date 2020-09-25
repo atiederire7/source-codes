@@ -14,7 +14,7 @@ $(document).ready(function(){
     	pauseOnFocus:true,
     	pauseOnHover: true,
 		pauseOnDotsHover:true,
-    	draggable: false,
+    	draggable: true,
     	swipe: true,
     	// touchTreshold: 10,
     	touchMove: true,
